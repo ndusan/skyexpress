@@ -1,0 +1,5 @@
+$(".add_button_enabled").click(
+function() {
+	ajax_add_as_friend();
+}
+)
