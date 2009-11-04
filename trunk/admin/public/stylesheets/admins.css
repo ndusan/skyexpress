@@ -1,0 +1,234 @@
+#content_main #entry-734 {
+padding:8px 0 0 1px;
+}
+
+#content_main #entry-734 .table_admins-header .table_admins-name{
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:3px 3px 0 0;
+	text-align:left;
+	width:75px;
+	font-weight: bold;
+}
+
+#content_main #entry-734 .table_admins-header .table_admins-surname{
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:3px 3px 0 0;
+	text-align:left;
+	width:75px;
+	font-weight: bold;
+}
+
+#content_main #entry-734 .table_admins-header .table_admins-username{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:70px;
+	font-weight: bold;
+}
+
+#content_main #entry-734 .table_admins-header .table_admins-password{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:70px;
+	font-weight: bold;
+}
+
+#content_main #entry-734 .table_admins-header .table_admins-reg_date{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:70px;
+	font-weight: bold;
+}
+
+#content_main #entry-734 .table_admins-header .table_admins-email{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:80px;
+	font-weight: bold;
+}
+
+#content_main #entry-734 .table_admins-header .table_admins-level{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:80px;
+	font-weight: bold;
+}
+
+#content_main #entry-734 .table_admins-header .table_admins-action{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:70px;
+	font-weight: bold;
+}
+
+#content_main #entry-734 .table_admins-header .table_admins-status{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:80px;
+	font-weight: bold;
+}
+
+#content_main #entry-734 .table_admins-results-off .table_admins-name{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:75px;
+}
+
+#content_main #entry-734 .table_admins-results-off .table_admins-surname{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:75px;
+}
+
+#content_main #entry-734 .table_admins-results-off .table_admins-username{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:70px;
+}
+
+#content_main #entry-734 .table_admins-results-off .table_admins-password{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:70px;
+}
+
+#content_main #entry-734 .table_admins-results-off .table_admins-reg_date{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:70px;
+}
+
+#content_main #entry-734 .table_admins-results-off .table_admins-email{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:80px;
+}
+
+#content_main #entry-734 .table_admins-results-off .table_admins-level{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:80px;
+}
+
+#content_main #entry-734 .table_admins-results-off .table_admins-action{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:70px;
+}
+
+#content_main #entry-734 .table_admins-results-off .table_admins-status{
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+text-align:left;
+width:80px;
+}
+
+
+
+.from_field .form_text {
+float:left;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+padding:3px 3px 0 0;
+width:125px;
+}
+
+.from_field input {
+	border: 1px solid #999999;
+	margin: 2px;
+	padding:2px;
+}
+
+.from_field select  {
+	border: 1px solid #999999;
+	margin: 2px;
+	padding:2px;
+}
+
+.inputbutton, .inputsubmit {
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	border: 0px;
+	font-size: 12px;
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow: rgba(0.5,0.5,0,0.3) 0 -1px 0;
+	font-weight:bold;
+	float: right;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	margin-top: 5px;
+	margin-right: 100px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	background-image: url(../img/button-grad.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 27px;
+	width: 116px;
+	color: #FFFFFF;
+}
+
+.form_var {
+	color:#FF0000
+}
+
+#content_main .entry-asset_asset_hentry_news {
+	font-weight: bold;
+	color: #333333;
+	float: left;
+
+	padding-top: 10px;
+}
+

@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 5; padding: 5; }
+
+body {
+	border-top-width: 10px;
+	border-top-style: noborder;
+	font: 11px "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+}
+
+form {
+	margin-left: 8px;
+	padding: 50px 16px 40px 16px;
+	font-weight: normal;
+	-moz-border-radius: 11px;
+	-khtml-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	-moz-box-shadow: rgba(200,200,200,1) 0 4px 18px;
+	-webkit-box-shadow: rgba(200,200,200,1) 0 4px 18px;
+	-khtml-box-shadow: rgba(200,200,200,1) 0 4px 18px;
+	box-shadow: rgba(200,200,200,1) 0 4px 18px;
+}
+
+form .forgetmenot { font-weight: normal; float: left; margin-bottom: 0; }
+
+#login form .submit input {
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	border: 0px;
+	font-size: 12px;
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow: rgba(0.5,0.5,0,0.3) 0 -1px 0;
+	font-weight:bold;
+	float: right;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	margin-top: 5px;
+	margin-right: 100px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	background-image: url(../img/button-grad.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 27px;
+	width: 116px;
+	color: #FFFFFF;
+}
+
+#login form p {
+	margin-bottom: 0;
+}
+
+label {
+	color: #777;
+	font-size: 13px;
+}
+
+form .forgetmenot label {
+	font-size: 11px;
+	line-height: 19px;
+}
+
+form .submit { float: right; }
+
+
+
+h1 a {
+	background: url(..layout/views/img/logo.png) no-repeat top center;
+	width: 326px;
+	height: 67px;
+	text-indent: -9999px;
+	overflow: hidden;
+	padding-bottom: 15px;
+	display: block;
+}
+
+#nav {
+	text-shadow: rgba(255,255,255,1) 0 1px 0;
+}
+
+#backtoblog a {
+	position: absolute;
+	top: 7px;
+	left: 15px;
+	text-decoration: none;
+}
+
+#login { width: 500px; margin: 7em auto; }
+
+.message {
+	margin: 0 0 16px 8px;
+	border-width: 1px;
+	border-style: solid;
+	padding: 12px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background:#FFEBE8;
+	border-color:#CC0000;
+}
+
+#nav { margin: 0 0 0 70px; padding: 35px; }
+
+#user_pass, #user_login {
+	font-size: 24px;
+	width: 97%;
+	padding: 3px;
+	margin-top: 2px;
+	margin-right: 6px;
+	margin-bottom: 16px;
+	border: 1px solid #e5e5e5;
+	background: #fbfbfb;
+}
+#footer_login {
+	padding: 25px 15px 0;
+	text-align: center;
+	}

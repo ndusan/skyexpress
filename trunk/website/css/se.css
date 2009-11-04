@@ -1,0 +1,718 @@
+@charset "utf-8";
+.text_adresa {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-align: center;
+}
+
+.naslov_text {
+	font-family: Geneva, Arial, sans-serif;
+	color: #1b5a8f;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 10px;
+	padding-left: 10px;
+	margin-top: 5px;
+	padding-top: 10px;
+}
+#support_download .text #image {
+	border: 1px solid #999999;
+}
+
+.podnaslov {
+	font-family: Geneva, Arial, sans-serif;
+	color: #333333;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+#div_daljazastita .text a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+
+.tackice {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #1B5A8F;
+}
+
+.text {
+	font-family: Geneva, Arial, sans-serif;
+	color: #333333;
+	font-size: 11px;
+	font-weight: normal;
+	margin-left: 10px;
+	padding-left: 10px;
+	list-style-position: outside;
+	list-style-image: url(../img/bulletimage.jpg);
+}
+#podmenu  a  {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: underline;
+}
+#index #index-sadrzaj {
+	font-family: Geneva, Arial, sans-serif;
+	text-align: justify;
+	padding: 5px;
+	border: 1px solid #E1E1E1;
+}
+
+#podmenu  a:hover  {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+#podmenu  a:visited  {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#podmenu  a:active  {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: none;
+}
+.naslov_podmenu {
+	font-family: Geneva, Arial, sans-serif;
+	color: #1B5A8F;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: left;
+}
+.naslov_text_manji {
+	font-family: Geneva, Arial, sans-serif;
+	color: #1b5a8f;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 10px;
+	padding-left: 10px;
+	list-style-position: outside;
+	list-style-image: url(../img/bullet-naslov.jpg);
+}
+#support_download .text a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#support_download .text a:visited {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#support_download .text a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+.text_news {
+	font-family: Geneva, Arial, sans-serif;
+	color: #333333;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+.naslov_text_news {
+	font-family: Geneva, Arial, sans-serif;
+	color: #1b5a8f;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 13px;
+	text-align: left;
+	vertical-align: middle;
+	height: 30px;
+}
+#main_tabel_karatkeristike p {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	color: #333333;
+	text-align: left;
+	font-weight: normal;
+	padding-left: 0px;
+}
+#main_tabel_karatkeristike #bullet_list {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	list-style-type: square;
+	line-height: 18px;
+	list-style-position: outside;
+	text-align: left;
+}
+#podmenu #tabela_side_menu {
+	border: 1px solid #C7C7C7;
+	margin-top: 5px;
+}
+#support_download2 #news_title {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 3px;
+	margin-left: 3px;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+#support_download2 #news_text {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-align: left;
+	margin-right: 3px;
+	margin-left: 3px;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+#support_download2 .text_news a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+#support_download2 .text_news a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+#support_download2 .text_news a:visited {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#div_daljazastita .text a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+#div_daljazastita .text a:visited {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#security_moduls .text a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#security_moduls .text a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+#security_moduls .text a:visited {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#moduli_linkovi .text a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: underline;
+	text-align: left;
+}
+#moduli_linkovi .text a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	text-align: left;
+}
+#moduli_linkovi .text a:visited {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #1B5A8F;
+	text-decoration: underline;
+	text-align: left;
+}
+#podmenu #podmenu_table {
+	padding-top: 5px;
+}
+#product_head {
+	text-align: left;
+}
+#table_download a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+	padding-left: 1px;
+	margin-left: 1px;
+	list-style-position: outside;
+	list-style-image: url(../img/bullet-dpwnload.jpg);
+}
+
+#table_download a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	padding-left: 1px;
+	margin-left: 1px;
+	list-style-position: outside;
+	list-style-image: url(../img/bullet-dpwnload.jpg);
+}
+#table_download a:visited {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+	padding-left: 1px;
+	margin-left: 1px;
+	list-style-position: outside;
+	list-style-image: url(../img/bullet-dpwnload.jpg);
+}
+#link_download a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+	text-align: center;
+}
+#link_download a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	text-align: center;
+}
+#download  th {
+	border: 2px solid #FFFFFF;
+}
+#tabela_side a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+#tabela_side a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: underline;
+}
+#product_head .text a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#product_head .text a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+#support_form a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: none;
+	text-align: center;
+}
+#support_form a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: underline;
+	text-align: center;
+}
+#kako {
+	padding-left: 20px;
+}
+#podmenu #tabela_side_menu #podmenu-items a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+	padding-left: 20px;
+}
+#podmenu #tabela_side_menu #podmeni_kerio {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#podmenu #tabela_side_menu #podmenu-items a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	padding-left: 20px;
+}
+#support_download #form1 .text #posalji {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	border: 1px solid #1B5A8F;
+	background-color: #1B5A8F;
+	height: 20px;
+	width: 100px;
+	font-weight: bold;
+	text-align: center;
+}
+#support_form .naslov_text_manji #form1 .text #posalji {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	border: 1px solid #1B5A8F;
+	background-color: #1B5A8F;
+	height: 20px;
+	width: 100px;
+	font-weight: bold;
+	text-align: center;
+}
+#support_form .naslov_text_manji #form2 .text #posalji {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	border: 1px solid #1B5A8F;
+	background-color: #1B5A8F;
+	height: 20px;
+	width: 100px;
+	font-weight: bold;
+	text-align: center;
+}
+.textCopy {
+	font-family: Geneva, Arial, sans-serif;
+	color: #333333;
+	font-size: 11px;
+	font-weight: normal;
+	margin-left: 10px;
+	padding-left: 10px;
+	text-align: justify;
+}
+#podmenu   a  {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#podmenu th {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+}
+#podmenu a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+.naslov #index .text a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#index .text a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#index .text a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+#support_download #form1 #posalji {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	border: 1px solid #1B5A8F;
+	background-color: #1B5A8F;
+	height: 20px;
+	width: 100px;
+	font-weight: bold;
+	text-align: center;
+}
+.text-forma {
+	font-family: Geneva, Arial, sans-serif;
+	color: #333333;
+	font-size: 11px;
+	font-weight: normal;
+	margin-left: 3px;
+	padding-left: 3px;
+	text-align: left;
+	width: 250px;
+}
+#support_form #form1 #posalji {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	border: 1px solid #1B5A8F;
+	background-color: #1B5A8F;
+	height: 20px;
+	width: 100px;
+	font-weight: bold;
+	text-align: center;
+}
+#support_form #form2 #posalji {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	border: 1px solid #1B5A8F;
+	background-color: #1B5A8F;
+	height: 20px;
+	width: 100px;
+	font-weight: bold;
+	text-align: center;
+}
+#index .text a:visited {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+.naslov #index .text a:visited {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+.naslov #index #1 #1 {
+	border: 1px solid #E4E4E4;
+	height: 17px;
+	background-color: #EEEEEE;
+}
+
+
+  div#rotator {
+	position:relative;
+	height:240px;
+
+}
+/* rotator css */
+	div#rotator ul li {
+	float:left;
+	position:absolute;
+	list-style: none;
+	left: 0px;
+	top: 0px;
+}
+/* rotator image style */	
+	div#rotator ul li img {
+	background: #FFF;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+    div#rotator ul li.show {
+	z-index:500
+}
+.naslov #index #index-sadrzaj a {
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+.naslov #index #index-sadrzaj a:hover {
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+#podmenu  #naslov-vesti a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
+#podmenu #naslov-vesti a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+#podmenu #text-vesti {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-align: justify;
+}
+#podmenu #datum-novosti {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+	text-align: left;
+	vertical-align: top;
+	margin-top: 5px;
+	padding-top: 5px;
+	top: 0px;
+	margin-left: 3px;
+	padding-left: 3px;
+	height: 20px;
+}
+#podmenu #text-vesti {
+}
+#podmenu #naslov-vesti {
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+.naslov-novosti {
+	font-family: Geneva, Arial, sans-serif;
+	color: #333333;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 3px;
+	padding-left: 3px;
+	text-align: left;
+	vertical-align: top;
+}
+.naslov #index #index-sadrzaj #title-vest-naslovna {
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+	text-align: left;
+	float: left;
+}
+.naslov #index #index-sadrzaj #datum-vest-naslovna {
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-align: left;
+	float: left;
+}
+.naslov #index #index-sadrzaj #text-vest-naslovna {
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-align: left;
+	float: left;
+}
+#brzi-linkovi a {
+	font-size: 10px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+	margin-right: 5px;
+}
+#brzi-linkovi a:hover {
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	margin-right: 5px;
+}
+#brzi-naslov p {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+#brzi-linkovi a:visited {
+	font-size: 10px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+	margin-right: 5px;
+}
+#brzi-naslov td {
+	border: 1px solid #EFEFEF;
+}
+#support_download2 .news_text a {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+#support_download2 .news_text a:hover {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+#support_download2 .news_text a:visited {
+	font-family: Geneva, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1B5A8F;
+	text-decoration: underline;
+}
