@@ -2,6 +2,7 @@
 
 //Check is session set
 $isSet=false;
+if(!empty($_SESSION['card'])){
 foreach ( $_SESSION['card'] as $key => $value ) $isSet=true;
 
 if($isSet){?>
@@ -51,4 +52,5 @@ if($isSet){?>
 </div>
 </fieldset>
 <?php
+}
 }?>

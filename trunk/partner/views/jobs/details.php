@@ -1,7 +1,7 @@
 <div id="content_main">
 	&#8629;<a href="<?php echo APP_ROOT.'jobs'?>">Povratak na pregled svih poslova</a>
 	<br/><br/>
-<div id="entry-734" class="entry-asset asset hentry news">
+<div class="entry-asset asset hentry news">
 <table>
 	<tr>
 		<td>Naziv posla:</td>
