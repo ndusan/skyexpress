@@ -411,3 +411,28 @@ function fill(thisValue, newDivID, oldDivID) {
     document.getElementById(oldDivID).value=thisValue;
     document.getElementById(newDivID).innerHTML='';
 }
+//Ajax Request/post functions
+function ajaxGet (what, params, where, on){
+	new Request.HTML({
+		headers: {'If-Modified-Since': 'Thu, 1 Jan 1970 00:00:00 GMT','Content-type':'text/html; charset=utf-8'},
+		url: what,
+		onRequest: $('loading').setStyle('display','block'),
+		method: 'get',
+		evalScripts: true,
+		evalResponse: true,
+		update: where,
+		/*onComplete : */
+		onSuccess:$('loading').setStyle('display','none')
+	}).send(params);
+}
+
+function ajaxPost(form, what, where, on){
+	new Request.HTML({		
+		url: what,
+		onRequest:function(){$(document.body).setStyle('cursor','progress');},
+		evalScripts: true,
+		evalResponse: true,
+		update: where,
+		onSuccess:function(){$(document.body).setStyle('cursor','auto');}
+	}).post(form);
+}
