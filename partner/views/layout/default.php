@@ -11,6 +11,8 @@
 		
 	<link type="text/css" rel="stylesheet" href="<?php echo ADMIN_APP_ROOT.'public/stylesheets/default.css'?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo ADMIN_APP_ROOT.'public/stylesheets/admins.css'?>">
+	<!-- Mootools -->
+	<script type="text/javascript" src="<?php echo APP_ROOT.'public/js/mootools-1.2.4-core-nc.js'?>"></script>
 	
 	<script type="text/javascript" src="<?php echo APP_ROOT.'public/ajax/default.js'?>"></script>
 	
