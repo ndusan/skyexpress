@@ -1166,6 +1166,15 @@ span.next img{
 	font-size: 11px;
 	border: 1px dotted #FFFFFF;
 }
+.table_header_center{
+	color:#000000;
+	font-weight: bold;
+	text-align: center;
+	background-color: #F5CD9A;
+	height: 40px;
+	font-size: 11px;
+	border: 1px dotted #FFFFFF;
+}
 #color_holder{
 	background-color: #F6C988;
 	height: 7px;
