@@ -2,6 +2,7 @@
 session_start();
 //connect on db
 include("../ajax/db_ajax.php");
+
 switch($_GET['action']){
 	
 	case 'article':
