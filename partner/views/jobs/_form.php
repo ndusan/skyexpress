@@ -2,7 +2,7 @@
 		<legend>[ Dodavanje novog posla ]</legend>
 			<div class="from_field">
 				<span class="form_text">Klijent:</span>
-				<select name="jobs[client_fk]" style="width:500px" onChange="showArticle('<?php echo APP_ROOT.'public/ajax';?>', this.value)" <?php echo ($entered ? 'disabled' : '')?>>
+				<select name="jobs[client_fk]" style="width:500px" onChange="ajaxGet('<?php echo APP_ROOT?>public/js/content.php', 'id='+this.value+'&action=article&root=<?php echo APP_ROOT?>', $('article_fk'));" <?php echo ($entered ? 'disabled' : '')?>>
 					<?php echo clients(element_val($errors['client_fk'], $sel['client_fk'], $params['jobs']['client_fk']), current_user('id'));?>
 				</select> *
 				<?php echo ($entered ? "<input type='hidden' name='jobs[client_fk]' value='".$params['jobs']['client_fk']."' />" : '')?>
@@ -11,7 +11,7 @@
 			<div class="from_field">
 				<span class="form_text">Artikal:</span>
 				<div id="article_fk">
-				<select name="jobs[article_fk]" style="width:500px" <?php echo ($entered ? "onChange='showArticleType(\"".APP_ROOT."public/ajax\", this.value)'" : 'disabled')?> >
+				<select name="jobs[article_fk]"  style="width:500px" onChange="ajaxGet('<?php echo APP_ROOT;?>public/js/content.php', 'id='+this.value+'&action=articleType&root=<?php echo APP_ROOT;?>', $('articleType_fk'));">
 					<?php echo ($entered ? articles() : "<option value='0'>Izaberite artikal</option>"); ?>
 				</select> *
 				</div>
