@@ -27,7 +27,10 @@
 				</div>
 			</div>
 			<br/>
-			<div id="loading" style="text-align: center;"></div> 
+			<div id="loading" style="text-align: center; display: none;">
+				<!-- Loading image -->
+				<img src="<?php echo APP_ROOT.'public/img/loading.gif'?>" alt="Loading..." title="Loading..." />
+			</div>
 			<div class="from_field">
 				<div  id="articleTypePrice_fk"></div>
 			</div>
