@@ -1,8 +1,9 @@
 <?php
 session_start();
+header('If-Modified-Since: Thu, 1 Jan 1970 00:00:00 GMT');
+header('Content-type: text/html; Charset=utf-8');
 //connect on db
 include("../ajax/db_ajax.php");
-
 switch($_GET['action']){
 	
 	case 'article':
@@ -10,6 +11,7 @@ switch($_GET['action']){
 						?>
 						<script type="text/javascript">
 							$('articleTypePrice_fk').innerHTML='';
+							$('loading').setStyle('display','none');
 						</script>
 						<?php 
 						//Get all articleTypes conected to selected id
@@ -52,6 +54,7 @@ switch($_GET['action']){
 						?>
 						<script type="text/javascript">
 							$('articleTypePrice_fk').innerHTML='';
+							$('loading').setStyle('display','none');
 						</script>
 						<?php 
 						//Get all articleTypes conected to selected id
@@ -76,13 +79,20 @@ switch($_GET['action']){
 						<select name="jobs[articleType_fk]"  style="width:500px" disabled='disabled' >
 							<option value='0'>Izaberite tip artikla</option>
 						</select> *
+						<script type="text/javascript">
+							$('articleTypePrice_fk').innerHTML='Nema podataka za trazeni kriterijum';
+						</script>
 						<?php 
 						endif;
 						
 	break;
 						
 	case 'articleTypePrice':
-		
+						?>
+						<script type="text/javascript">
+							$('loading').setStyle('display','none');
+						</script>
+						<?php 
 						//Get discount
 						$query = sprintf("select * from `discount` where `partner_fk`='%s' and `articleType_fk`='%s'",
 										 mysql_escape_string($_SESSION['user_partner']['id']),
@@ -100,7 +110,7 @@ switch($_GET['action']){
 						if(mysql_num_rows($result)>0):
 							
 							// number of rows to show per page
-							$rowsperpage = 1;
+							$rowsperpage = 15;
 							// find out total pages
 							$totalpages = ceil(mysql_num_rows($result) / $rowsperpage);
 							
