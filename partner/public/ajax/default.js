@@ -419,10 +419,10 @@ function ajaxGet (what, params, where, on){
 		onRequest: $('loading').setStyle('display','block'),
 		method: 'get',
 		evalScripts: true,
-		evalResponse: true,
+		/*evalResponse: true,*/
 		update: where,
-		/*onComplete : */
-		onSuccess:$('loading').setStyle('display','none')
+		onComplete:function(){},
+		onSuccess:function(){}
 	}).send(params);
 }
 
