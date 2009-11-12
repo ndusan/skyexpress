@@ -24,6 +24,7 @@
 	<title>Control panel - SkyExpress.rs :: Inspired by LANteam.rs ::</title>
 	
 	<script type="text/javascript" src="<?php echo ADMIN_APP_ROOT;?>public/js/tiny_mce/tiny_mce.js"></script>
+	<?php if($params['0']!='jobs/create'):?>
 	<script language="javascript" type="text/javascript">
 		tinyMCE.init({
 			mode : "textareas",
@@ -38,8 +39,8 @@
 			theme_advanced_statusbar_location : "bottom",
 			extended_valid_elements : "a[name|href|target|title|onclick],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name],hr[class|width|size|noshade],font[face|size|color|style],span[class|align|style]"
 		});
-  </script>
-	
+  	</script>
+	<?php endif;?>
 </head>
 <body onload="javascript:setInterval('updateClock()', 1000 );updateClock(); ">
 <div id="container">
