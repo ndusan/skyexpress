@@ -69,12 +69,27 @@ if($isSet){?>
 		}
 	</script>
 </div>
+<br style="clear:both"/>
+<br/>
+<div style="padding-left: 8px;">
+	<div style="float: left; width: 160px;"><u>Komentar:</u></div>
+	<div style="float: left;">
+		<textarea style="width: 510px; height: 100px;" name="msgText"></textarea>
+		<input type="hidden" name="action" value="addJob"/>
+	</div>
+</div>
 <div style="clear: both;"></div><br/>
 <div id='login_warning'>Ukoliko ste sigurno odabrali artikle, klikom na ikonicu "Pošalji" vaš zahtev će biti prosleđen. Očekujte odgovor u skorije vreme.</div>
 <br style="clear:both"/>
 <div style="float:right">
 <a href="<?php echo APP_ROOT.'jobs/'?>send/<?php echo $params['jobs']['client_fk'] ?>?desc1=0&desc2=0" id="send_job" onclick="sendJob();"><img src="<?php echo ADMIN_APP_ROOT.'public/img/slanje.gif'?>" title="Pošalji"/></a>
 </div>
+<script type="text/javascript">
+	function sendJob(){
+		ajaxPost($('formSelected'), '<?php echo APP_ROOT.'public/js/content.php'?>');
+		return true;
+	}
+</script>
 </fieldset>
 <?php
 }

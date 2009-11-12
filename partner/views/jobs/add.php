@@ -10,7 +10,7 @@
 		</form>
 	</div>
 	<div id="entry-734" class="entry-asset asset hentry news">
-		<form action="<?php echo APP_ROOT ?>jobs/send" method="post" id='form'>
+		<form action="<?php echo APP_ROOT ?>jobs/send" method="post" id='formSelected' name='formSelected'>
 		
 			<?php include('_post.php');?>
 		
