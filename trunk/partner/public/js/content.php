@@ -4,6 +4,12 @@ header('If-Modified-Since: Thu, 1 Jan 1970 00:00:00 GMT');
 header('Content-type: text/html; Charset=utf-8');
 //connect on db
 include("../ajax/db_ajax.php");
+
+switch($_POST['action']){
+	case 'addJob': $_SESSION['msg'] = $_POST['msgText'];
+	break;
+}
+
 switch($_GET['action']){
 	
 	case 'article':
@@ -248,6 +254,11 @@ switch($_GET['action']){
 						
 	break;
 
+	case 'setMsg':
+					$_SESSION['msg'] = $_GET['msg'];
+					echo 'test';
+	break;
+	
 	default: 
 		
 	break;
