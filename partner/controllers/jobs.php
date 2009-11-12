@@ -139,9 +139,10 @@ switch ( $route['view'] ) {
 	
 	case 'send':
 		//Collect info from session
-		if(addJob($_SESSION['card'], $params, current_user('id'))){
+		if(addJob($_SESSION, $params, current_user('id'))){
 			//Clean session
 			unset($_SESSION['card']);
+			unset($_SESSION['msg']);
                         //Send email 
                         
 			$msg = "<br/>Partner je podneo zahtev za novi posao.<br/>Detalje možete videti u sekciji Partneri » Poslovi.<br/><br/>";
