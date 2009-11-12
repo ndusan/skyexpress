@@ -27,6 +27,10 @@
 		<td><u>Dodatne opcije:</u></td>
 		<td><?php echo $sel['details'];?></td>
 	</tr>
+	<tr>
+		<td>Komentar:</td>
+		<td><?php echo $sel['comment'];?></td>
+	</tr>
 </table>
 </div>
 <br/>
