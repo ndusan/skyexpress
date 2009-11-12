@@ -23,6 +23,10 @@
 		<td>Kontakt osoba:</td>
 		<td><?php echo $sel['client_name']." ".$sel['surname'];?></td>
 	</tr>
+	<tr>
+		<td><u>Dodatne opcije:</u></td>
+		<td><?php echo $sel['details'];?></td>
+	</tr>
 </table>
 </div>
 <br/>
