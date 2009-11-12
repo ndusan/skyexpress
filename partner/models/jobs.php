@@ -1,10 +1,10 @@
 <?php
 
-	function addJob($params, $params, $partner_id){
+	function addJob($sessionParams, $paramsDesc, $partner_id){
 	  
 	  $connection = db_connect();
 	  
-	  $sql = sprintf("select * from client where id='%s'", mysql_real_escape_string($params['client_fk']));
+	  $sql = sprintf("select * from client where id='%s'", mysql_real_escape_string($paramsDesc['client_fk']));
 	  $res = mysql_query($sql);
 	  $rez = mysql_fetch_assoc($res);
 	  
@@ -14,26 +14,28 @@
 	  
 	  //Description
 	  $desc = "";
-	  if($params['desc1']==1) $desc .= "Potrebna profaktura<br/>";
-	  if($params['desc2']==1) $desc .= "Potrebna faktura i realizacija posla";
+	  if($paramsDesc['desc1']==1) $desc .= "Potrebna profaktura<br/>";
+	  if($paramsDesc['desc2']==1) $desc .= "Potrebna faktura i realizacija posla";
 	  
 	  $query = sprintf("insert into job set partner_fk = '%s',
 	  										name = '%s',
 											client_fk = '%s',
 											details = '%s',
+											comment = '%s',
 											date = CURRENT_DATE,
 											time = CURRENT_TIME,
 											status = '0'",
 											mysql_real_escape_string($partner_id),
 											mysql_real_escape_string($name),
-											mysql_real_escape_string($params['client_fk']),
-											mysql_real_escape_string($desc)
+											mysql_real_escape_string($partner_id['client_fk']),
+											mysql_real_escape_string($desc),
+											mysql_real_escape_string($sessionParams['msg'])
 						);	
 	  $result = mysql_query($query);
 	  
 	  $job_id = mysql_insert_id();
 	  
-	  foreach ( $params as $key => $value ) {
+	  foreach ( $sessionParams['card'] as $key => $value ) {
       if($value>0){
 		  $query = sprintf("insert into jobItems set job_fk = '%s',
 		  										articleTypePrice_fk = '%s',
@@ -90,7 +92,7 @@
 	{
 		  $connection = db_connect();
 			
-	      $query = sprintf("select job.name, job.date, job.time, job.status, job.details, client.company,
+	      $query = sprintf("select job.name, job.date, job.time, job.status, job.details, job.comment, client.company,
 	    					   client.name as client_name, client.surname from job inner join client on
 	    					   job.client_fk=client.id where job.id = %s",
 									 mysql_real_escape_string($id)
