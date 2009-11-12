@@ -38,7 +38,7 @@ function companyBusiness($id){
 				
 				if(strtotime($end_date)>=strtotime('now') && strtotime($end_date)<=strtotime('+1 month')){
 					//This is expiring in 1 month
-					$expireInOneMonth[] = array('name' => $res['name'], 'duration' => $res['duration'], 'numOfLicence' => $res['numOfLicence'], 'pricePerYear' => $res['pricePerYear'], 'activ_date' => $rez['activ_date'], 'expired' => $end_date, 'company' => $rez['company'], 'client_name' => $rez['name'], 'client_surname' => $rez['surname']);
+					$expireInOneMonth[] = array('id' => $res['id'], 'client_fk' => $rez['client_fk'], 'name' => $res['name'], 'duration' => $res['duration'], 'numOfLicence' => $res['numOfLicence'], 'pricePerYear' => $res['pricePerYear'], 'activ_date' => $rez['activ_date'], 'expired' => $end_date, 'company' => $rez['company'], 'client_name' => $rez['name'], 'client_surname' => $rez['surname']);
 				}
 				if(strtotime($end_date)<strtotime('now')){
 					//This has already expired
