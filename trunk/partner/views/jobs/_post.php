@@ -88,7 +88,7 @@ if($isSet){?>
 <script type="text/javascript">
 	function sendJob(){
 		ajaxPost($('formSelected'), '<?php echo APP_ROOT.'public/js/content.php'?>');
-		ajaxGet($('send_job').get('value'));
+		location.href = $('send_job').get('value');
 	}
 </script>
 </fieldset>
