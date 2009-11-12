@@ -20,6 +20,12 @@
 					<span class="style2"><?php echo showStatus($sel['status'])?>&nbsp;&nbsp;&nbsp;&nbsp;
 					<a href="<?php echo APP_ROOT ?>partners/job/<?php echo $sel['id']?>/status">&raquo; <?php echo ($sel['status']==0 ? 'Poništi posao' : 'Vrati u obradu') ?> &laquo;</a> </span></td>
 			</tr>
+			<tr>
+				<td><strong><span class="style1">Dodatne opcije</span>:</strong></td>
+				<td>
+					<span class="style2"><?php echo $sel['details'];?>
+				</td>
+			</tr>
 		</table>
 <br/>
 		<table>

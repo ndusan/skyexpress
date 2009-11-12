@@ -18,6 +18,12 @@
 				<td><strong>Status:</strong></td>
 			  <td><span class="style2"><?php echo showStatus($sel['status'])?></span></td>
 			</tr>
+			<tr>
+				<td><strong><span class="style1">Dodatne opcije</span>:</strong></td>
+				<td>
+					<span class="style2"><?php echo $sel['details'];?>
+				</td>
+			</tr>
 		</table>
 <br/>
 		<table>
