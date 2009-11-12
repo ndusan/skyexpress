@@ -55,15 +55,15 @@ if($isSet){?>
 	</div>
 	<script type="text/javascript">
 		function setDesc(val, desc){
-			var url = $('send_job').get('href');
+			var url = $('send_job').get('value');
 			if($(desc).value==1){
 				//Set url
 				newUrl = url.replace(desc+'=0', desc+'=1');
-				$('send_job').set('href', newUrl);
+				$('send_job').set('value', newUrl);
 			}else{
 				//Remove from url
 				newUrl = url.replace(desc+'=1', desc+'=0');
-				$('send_job').set('href', newUrl);
+				$('send_job').set('value', newUrl);
 			}
 			$(desc).value = 1-$(desc).value;
 		}
@@ -82,12 +82,13 @@ if($isSet){?>
 <div id='login_warning'>Ukoliko ste sigurno odabrali artikle, klikom na ikonicu "Pošalji" vaš zahtev će biti prosleđen. Očekujte odgovor u skorije vreme.</div>
 <br style="clear:both"/>
 <div style="float:right">
-<a href="<?php echo APP_ROOT.'jobs/'?>send/<?php echo $params['jobs']['client_fk'] ?>?desc1=0&desc2=0" id="send_job" onclick="sendJob();"><img src="<?php echo ADMIN_APP_ROOT.'public/img/slanje.gif'?>" title="Pošalji"/></a>
+<input type="hidden" name="send_job" id="send_job" value="<?php echo APP_ROOT.'jobs/'?>send/<?php echo $params['jobs']['client_fk'] ?>?desc1=0&desc2=0" />
+<a href="javascript:;" onclick="sendJob();"><img src="<?php echo ADMIN_APP_ROOT.'public/img/slanje.gif'?>" title="Pošalji"/></a>
 </div>
 <script type="text/javascript">
 	function sendJob(){
 		ajaxPost($('formSelected'), '<?php echo APP_ROOT.'public/js/content.php'?>');
-		return true;
+		ajaxGet($('send_job').get('value'));
 	}
 </script>
 </fieldset>
