@@ -65,7 +65,7 @@ switch ( $route['view'] ) {
 		 $sub_label = "Dodavanje";
 		break;
 	case 'calc_create':
-
+		
 		$entered = false;
 		// set up default cart values
 		 if(!isset($_SESSION['card'])){
@@ -139,7 +139,7 @@ switch ( $route['view'] ) {
 	
 	case 'send':
 		//Collect info from session
-		if(addJob($_SESSION['card'], $params['client_fk'], current_user('id'))){
+		if(addJob($_SESSION['card'], $params, current_user('id'))){
 			//Clean session
 			unset($_SESSION['card']);
                         //Send email 
