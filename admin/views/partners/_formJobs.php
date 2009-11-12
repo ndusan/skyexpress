@@ -23,7 +23,13 @@
 			<tr>
 				<td><strong><span class="style1">Dodatne opcije</span>:</strong></td>
 				<td>
-					<span class="style2"><?php echo $sel['details'];?>
+					<span class="style2"><?php echo $sel['details'];?></span>
+				</td>
+			</tr>
+			<tr>
+				<td><strong><span class="style1">Komentar:</span></strong></td>
+				<td>
+					<span class="style2"><?php echo $sel['comment'];?></span>
 				</td>
 			</tr>
 		</table>
