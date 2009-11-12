@@ -4,6 +4,7 @@
     if(isset($_POST['posalji'])){
         $entered = true;
         $all = $_POST;
+		//print_r($_POST);
         $errors = array();
         //print_r($all);
         //check if all fiels are not empty
@@ -13,6 +14,12 @@
                     $errors[$key] = true;
                 }
             }
+    //List with all codes
+	$code = array('1.jpeg' => 'ovessedfc', '2.jpeg' => 'bilenonst', '3.jpeg' => 'pessester', '4.jpeg' => 'gorsuble', '5.jpeg' => 'readises');
+    if($all['code'] != $code[$all['code_img']]){
+    	$entered = false;
+    	$errors['code'] = true;
+    }
         if($entered){
             //All fields are not empty
             $from = "From:".$all['email'];
@@ -279,6 +286,19 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
                           </label></td>
                           <td <?php if($errors['contact']) echo "style='color:red'"; ?>>kako žellite da Vas kontaktiramo?</td>
                         </tr>
+                        <tr>
+                        <td>
+                        	<div style="float: left;">
+                        		<?php $img = rand(1, 5).'.jpeg'; ?>
+                        		<img src="img/<?php echo $img;?>" alt="" title="" />
+                        		<input type="hidden" value="<?php echo $img;?>" name="code_img" />
+                        	</div>
+                        	<div style="float:left;">
+                        		<input name="code" type="text" class="text-forma" style="width: 50px; margin-top: 25px;" id="code_contact" size="45" value="<?php echo $all['code'] ?>" />
+                        	</div>
+                        </td>
+                        <td valign="top" class="text"  <?php echo ($errors['code']? "style='color:red'": '') ?>><br/><br/><strong>Sigurnosni kod</strong> *</td>
+                      </tr>
                         <tr>
                           <td>&nbsp;</td>
                           <td>&nbsp;</td>

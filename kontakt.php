@@ -17,6 +17,12 @@ if(isset($_POST['posalji'])){
         }
     }
    // print_r($errors);
+    //List with all codes
+	$code = array('1.jpeg' => 'ovessedfc', '2.jpeg' => 'bilenonst', '3.jpeg' => 'pessester', '4.jpeg' => 'gorsuble', '5.jpeg' => 'readises');
+    if($form['code'] != $code[$form['code_img']]){
+    	$errors['total_errors']++;
+    	$errors['code'] = true;
+    }
     if($errors['total_errors'] <= 0){
         //Send to email
         $to = 'k.djuric@sky-express.rs';
@@ -108,6 +114,7 @@ body,td,th {
 </head>
 
 <body onload="MM_preloadImages('img/images/btn_home_ac.jpg','img/images/btn_aboutus_ac.jpg','img/images/btn_ref_ac.jpg','img/images/btn_job_ac.jpg','img/images/btn_english_ac.jpg','img/images/btn_proizvodi_active.jpg','img/images/btn_support-active.jpg','img/images/btn_download_active.jpg','img/images/btn_partners_active.jpg','img/images/btn_news_active.jpg','img/images/btn_usluge_active.jpg')"> 
+
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <th width="33%" height="147" background="img/images/bg_top-pozadina.jpg" scope="col">&nbsp;</th>
@@ -325,6 +332,19 @@ tel/fax: +381 11 242 19 45</strong></p></td>
                           <textarea name="form[comment]" cols="45" rows="5" class="text-forma" id="komentar_contact"><?php echo $form['comment'] ?></textarea>
                         </label></td>
                         <td valign="top" class="text" <?php echo ($errors['comment']? "style='color:red'": '') ?>><strong>Komentar / Pitanje / Sugestija</strong> *</td>
+                      </tr>
+                      <tr>
+                        <td>
+                        	<div style="float: left;">
+                        		<?php $img = rand(1, 5).'.jpeg'; ?>
+                        		<img src="img/<?php echo $img;?>" alt="" title="" />
+                        		<input type="hidden" value="<?php echo $img;?>" name="form[code_img]" />
+                        	</div>
+                        	<div style="float:left;">
+                        		<input name="form[code]" type="text" class="text-forma" style="width: 50px; margin-top: 25px;" id="code_contact" size="45" value="<?php echo $form['code'] ?>" />
+                        	</div>
+                        </td>
+                        <td valign="top" class="text"  <?php echo ($errors['code']? "style='color:red'": '') ?>><br/><br/><strong>Sigurnosni kod</strong> *</td>
                       </tr>
                       <tr>
                         <td>&nbsp;</td>
