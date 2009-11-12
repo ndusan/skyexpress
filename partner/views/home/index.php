@@ -13,25 +13,31 @@
 		
 		<table>
 <tr>
-				<td width="150" id='table_header_left'>Firma</td>
-			  <td width="120" id='table_header_left'>Kontakt osoba</td>
-	    <td width="150" id='table_header_left'>Artikal</td>
-	    <td id='table_header_center'>Datum aktivacije</td>
-		<td id='table_header_center'>Trajanje</td>
+				<td width="130" id='table_header_left'>Firma</td>
+			  	<td width="100" id='table_header_left'>Kontakt osoba</td>
+	    		<td width="120" id='table_header_left'>Artikal</td>
+	    		<td id='table_header_center'>Datum aktivacije</td>
+				<td id='table_header_center'>Trajanje</td>
 				<td id='table_header_center'>Datum isteka</td>
 				<td id='table_header_center'>Broj licenci</td>
+				<td width="50" id='table_header_center'>Napomena</td>
 			</tr>
 			<?php
 			foreach ( $lic['expireInOneMonth'] as $val ) {
 			?>
 			<tr onMouseOver="this.className='TrMouseOver'" onMouseOut="this.className='TrMouseOut'" class="TrMouseOut">
-				<td width="150" id="table_body_left"><?php echo $val['company']?></td>
-			  <td width="120" id="table_body_left"><?php echo $val['client_name'].' '.$val['client_surname']?></td>
-			  <td width="150" id="table_body_left"><?php echo $val['name']?></td>
-			  <td id="table_body_center"><?php echo dateFormat($val['activ_date'])?></td>
+				<td width="130" id="table_body_left"><?php echo $val['company']?></td>
+			  	<td width="100" id="table_body_left"><?php echo $val['client_name'].' '.$val['client_surname']?></td>
+			  	<td width="120" id="table_body_left"><?php echo $val['name']?></td>
+			  	<td id="table_body_center"><?php echo dateFormat($val['activ_date'])?></td>
 				<td id="table_body_center"><?php echo $val['duration']?></td>
 				<td id="table_body_center"><?php echo dateFormat($val['expired'])?></td>
 				<td id="table_body_center"><?php echo $val['numOfLicence']?></td>
+				<td  width="70" id="table_body_center">
+					<!-- Set akcija -->
+					<a href="home?id=<?php echo $val['id'];?>&client=<?php echo $val['client_fk'];?>&action=expend">Obnovljena</a><br/>
+					<a href="home?id=<?php echo $val['id'];?>&client=<?php echo $val['client_fk'];?>&action=cancel">Otkazana</a>
+				</td>
 			</tr>
 			<?php
 			}
@@ -72,7 +78,6 @@
 				<td  width="70" id="table_body_center">
 					<!-- Set akcija -->
 					<a href="home?id=<?php echo $val['id'];?>&client=<?php echo $val['client_fk'];?>&action=expend">Obnovljena</a><br/>
-					<a href="home?id=<?php echo $val['id'];?>&client=<?php echo $val['client_fk'];?>&action=inproces">U procesu</a><br/>
 					<a href="home?id=<?php echo $val['id'];?>&client=<?php echo $val['client_fk'];?>&action=cancel">Otkazana</a>
 				</td>
 			</tr>
